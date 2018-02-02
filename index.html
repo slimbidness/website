@@ -21,10 +21,10 @@
 </style>
 
 <body>
-    <p id="e">text to encode:</p>
+    <p>text to encode:</p>
     <textarea id="encode"></textarea>
     <div id="showEncoding"></div>
-    <p id="d">text to decode:</p>
+    <p>text to decode:</p>
     <textarea id="decode"></textarea>
     <div id="showDecoding"></div>
     <!--<button id="clear">clear text</button>-->
@@ -38,47 +38,42 @@
 //            $('#e').append('<textarea id="encode"></textarea>');
 //            $('#d').append('<textarea id="decode"></textarea>');
 //        });
-
-        $('#encode').on('keyup', function(e) {
+        $('#encode').on('keydown', function(e) {
             // e.preventDefault();
-            if (e.keyCode === 32) {
-                $('#showEncoding').append(' ');
-            } else if (e.keyCode === 8) {
-                console.log("backspace ignored");
-            } else {
-                switch(e.key) {
-                    case 'a': $('#showEncoding').append('l'); break;
-                    case 'b': $('#showEncoding').append('v'); break;
-                    case 'c': $('#showEncoding').append('x'); break;
-                    case 'd': $('#showEncoding').append('s'); break;
-                    case 'e': $('#showEncoding').append('w'); break;
-                    case 'f': $('#showEncoding').append('d'); break;
-                    case 'g': $('#showEncoding').append('f'); break;
-                    case 'h': $('#showEncoding').append('g'); break;
-                    case 'i': $('#showEncoding').append('u'); break;
-                    case 'j': $('#showEncoding').append('h'); break;
-                    case 'k': $('#showEncoding').append('j'); break;
-                    case 'l': $('#showEncoding').append('k'); break;
-                    case 'm': $('#showEncoding').append('n'); break;
-                    case 'n': $('#showEncoding').append('b'); break;
-                    case 'o': $('#showEncoding').append('i'); break;
-                    case 'p': $('#showEncoding').append('o'); break;
-                    case 'q': $('#showEncoding').append('p'); break;
-                    case 'r': $('#showEncoding').append('e'); break;
-                    case 's': $('#showEncoding').append('a'); break;
-                    case 't': $('#showEncoding').append('r'); break;
-                    case 'u': $('#showEncoding').append('y'); break;
-                    case 'v': $('#showEncoding').append('c'); break;
-                    case 'w': $('#showEncoding').append('q'); break;
-                    case 'x': $('#showEncoding').append('z'); break;
-                    case 'y': $('#showEncoding').append('t'); break;
-                    case 'z': $('#showEncoding').append('m'); break;
-                    default : $('#showEncoding').append('*');
+                switch(e.keyCode) {
+                    case 65: $('#showEncoding').append('l'); break;
+                    case 66: $('#showEncoding').append('v'); break;
+                    case 67: $('#showEncoding').append('x'); break;
+                    case 68: $('#showEncoding').append('s'); break;
+                    case 69: $('#showEncoding').append('w'); break;
+                    case 70: $('#showEncoding').append('d'); break;
+                    case 71: $('#showEncoding').append('f'); break;
+                    case 72: $('#showEncoding').append('g'); break;
+                    case 73: $('#showEncoding').append('u'); break;
+                    case 74: $('#showEncoding').append('h'); break;
+                    case 75: $('#showEncoding').append('j'); break;
+                    case 76: $('#showEncoding').append('k'); break;
+                    case 77: $('#showEncoding').append('n'); break;
+                    case 78: $('#showEncoding').append('b'); break;
+                    case 79: $('#showEncoding').append('i'); break;
+                    case 80: $('#showEncoding').append('o'); break;
+                    case 81: $('#showEncoding').append('p'); break;
+                    case 82: $('#showEncoding').append('e'); break;
+                    case 83: $('#showEncoding').append('a'); break;
+                    case 84: $('#showEncoding').append('r'); break;
+                    case 85: $('#showEncoding').append('y'); break;
+                    case 86: $('#showEncoding').append('c'); break;
+                    case 87: $('#showEncoding').append('q'); break;
+                    case 88: $('#showEncoding').append('z'); break;
+                    case 89: $('#showEncoding').append('t'); break;
+                    case 90: $('#showEncoding').append('m'); break;
+                    case 32: $('#showEncoding').append(' '); break;
+                    case 8 : console.log('backspaceIgnore'); break;
+                    default: $('#showEncoding').append('?');
                 }
-            }
         });
 
-        $('#decode').on('keyup', function(d) {
+        $('#decode').on('keydown', function(d) {
             // d.preventDefault();
                 switch(d.keyCode) {
                     case 65: $('#showDecoding').append('s'); break;
@@ -108,8 +103,8 @@
                     case 89: $('#showDecoding').append('u'); break;
                     case 90: $('#showDecoding').append('x'); break;
                     case 32: $('#showDecoding').append(' '); break;
-                    case 8 : console.log("backspace ignored");
-                    default: $('#showDecoding').append('*');
+                    case 8 : console.log('backspaceIgnore'); break;
+                    default: $('#showDecoding').append('?');
                 }
         });
     };

@@ -5,36 +5,38 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
     <title>monotreme_comms</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-</head>
 
-<style>
-    body{
-        background-image: url('2.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        /* Create the parallax scrolling effect */
-        background-attachment: fixed;
-    }
-    div {
-        width: 98.4vw;
-        background-color: #fffbe2;
-        color: black;
-    }
-    textarea {
-        width: 98vw;
-    }
-</style>
+    <style>
+	    body{
+	        background-image: url('2.jpg');
+	        background-size: cover;
+	        background-position: center;
+	        background-repeat: no-repeat;
+	        /* Create parallax scroll effect */
+	        background-attachment: fixed;
+	    }
+	    div {
+	        width: 98.4vw;
+	        background-color: #fffbe2;
+	        color: black;
+	    }
+	    textarea {
+	        width: 98vw;
+	    }
+	</style>
+
+</head>
 
 <body>
     <p>text to encode:</p>
     <textarea id="encode"></textarea>
-    <div id="showEncoding"></div>
+    <div><p id="showEncoding"></p></div>
     <p>text to decode:</p>
     <textarea id="decode"></textarea>
-    <div id="showDecoding"></div>
+    <div><p id="showDecoding"></p></div>
     <button id="clear">clear text</button>
 </body>
 
@@ -80,6 +82,9 @@
                     default: $('#showEncoding').append('?');
                 }
         });
+
+        // broken backspace function to work on:
+        // (function(){$('#showEncoding').slice(0,-1);})();
 
         $('#decode').on('keydown', function(d) {
                 switch(d.keyCode) {

@@ -5,18 +5,26 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>monotreme comms</title>
+    <title>monotreme_comms</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <style>
+    body{
+        background-image: url('2.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+    }
     div {
-        width: 100vw;
+        width: 98.4vw;
         background-color: #fffbe2;
         color: black;
     }
     textarea {
-        width: 100vw;
+        width: 98vw;
     }
 </style>
 
@@ -27,19 +35,19 @@
     <p>text to decode:</p>
     <textarea id="decode"></textarea>
     <div id="showDecoding"></div>
-    <!--<button id="clear">clear text</button>-->
+    <button id="clear">clear text</button>
 </body>
 
 <script>
     var Encoder = function () {
+        'use strict';
 
-//        $('#clear').on('click', function() {
-//            $('#showDecoding, #showEncoding').remove();
-//            $('#e').append('<textarea id="encode"></textarea>');
-//            $('#d').append('<textarea id="decode"></textarea>');
-//        });
+        $('#clear').on('click', function() {
+            $('#showDecoding, #showEncoding').empty();
+            $('textarea').val('');
+        });
+
         $('#encode').on('keydown', function(e) {
-            // e.preventDefault();
                 switch(e.keyCode) {
                     case 65: $('#showEncoding').append('l'); break;
                     case 66: $('#showEncoding').append('v'); break;
@@ -74,7 +82,6 @@
         });
 
         $('#decode').on('keydown', function(d) {
-            // d.preventDefault();
                 switch(d.keyCode) {
                     case 65: $('#showDecoding').append('s'); break;
                     case 66: $('#showDecoding').append('n'); break;

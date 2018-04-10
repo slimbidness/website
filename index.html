@@ -5,10 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
     <title>monotreme_comms</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
     <style>
 	    body{
 	        background-image: url('2.jpg');
@@ -43,89 +40,5 @@
     <div><p id="showDecoding"></p></div>
     <button id="clear">clear text</button>
 </body>
-
-<script>
-    var Encoder = function () {
-        'use strict';
-
-        $('#clear').on('click', function() {
-            $('#showDecoding, #showEncoding').empty();
-            $('textarea').val('');
-        });
-
-        $('#encode').on('keydown', function(e) {
-                switch(e.keyCode) {
-                    case 65: $('#showEncoding').append('l'); break;
-                    case 66: $('#showEncoding').append('v'); break;
-                    case 67: $('#showEncoding').append('x'); break;
-                    case 68: $('#showEncoding').append('s'); break;
-                    case 69: $('#showEncoding').append('w'); break;
-                    case 70: $('#showEncoding').append('d'); break;
-                    case 71: $('#showEncoding').append('f'); break;
-                    case 72: $('#showEncoding').append('g'); break;
-                    case 73: $('#showEncoding').append('u'); break;
-                    case 74: $('#showEncoding').append('h'); break;
-                    case 75: $('#showEncoding').append('j'); break;
-                    case 76: $('#showEncoding').append('k'); break;
-                    case 77: $('#showEncoding').append('n'); break;
-                    case 78: $('#showEncoding').append('b'); break;
-                    case 79: $('#showEncoding').append('i'); break;
-                    case 80: $('#showEncoding').append('o'); break;
-                    case 81: $('#showEncoding').append('p'); break;
-                    case 82: $('#showEncoding').append('e'); break;
-                    case 83: $('#showEncoding').append('a'); break;
-                    case 84: $('#showEncoding').append('r'); break;
-                    case 85: $('#showEncoding').append('y'); break;
-                    case 86: $('#showEncoding').append('c'); break;
-                    case 87: $('#showEncoding').append('q'); break;
-                    case 88: $('#showEncoding').append('z'); break;
-                    case 89: $('#showEncoding').append('t'); break;
-                    case 90: $('#showEncoding').append('m'); break;
-                    case 32: $('#showEncoding').append(' '); break;
-                    case 8 : console.log('backspaceIgnore'); break;
-                    default: $('#showEncoding').append('?');
-                }
-        });
-
-        // broken backspace function to work on:
-        // (function(){$('#showEncoding').slice(0,-1);})();
-
-        $('#decode').on('keydown', function(d) {
-                switch(d.keyCode) {
-                    case 65: $('#showDecoding').append('s'); break;
-                    case 66: $('#showDecoding').append('n'); break;
-                    case 67: $('#showDecoding').append('v'); break;
-                    case 68: $('#showDecoding').append('f'); break;
-                    case 69: $('#showDecoding').append('r'); break;
-                    case 70: $('#showDecoding').append('g'); break;
-                    case 71: $('#showDecoding').append('h'); break;
-                    case 72: $('#showDecoding').append('j'); break;
-                    case 73: $('#showDecoding').append('o'); break;
-                    case 74: $('#showDecoding').append('k'); break;
-                    case 75: $('#showDecoding').append('l'); break;
-                    case 76: $('#showDecoding').append('a'); break;
-                    case 77: $('#showDecoding').append('z'); break;
-                    case 78: $('#showDecoding').append('m'); break;
-                    case 79: $('#showDecoding').append('p'); break;
-                    case 80: $('#showDecoding').append('q'); break;
-                    case 81: $('#showDecoding').append('w'); break;
-                    case 82: $('#showDecoding').append('t'); break;
-                    case 83: $('#showDecoding').append('d'); break;
-                    case 84: $('#showDecoding').append('y'); break;
-                    case 85: $('#showDecoding').append('i'); break;
-                    case 86: $('#showDecoding').append('b'); break;
-                    case 87: $('#showDecoding').append('e'); break;
-                    case 88: $('#showDecoding').append('c'); break;
-                    case 89: $('#showDecoding').append('u'); break;
-                    case 90: $('#showDecoding').append('x'); break;
-                    case 32: $('#showDecoding').append(' '); break;
-                    case 8 : console.log('backspaceIgnore'); break;
-                    default: $('#showDecoding').append('?');
-                }
-        });
-    };
-    $(document).ready(Encoder);
-
-</script>
 
 </html>

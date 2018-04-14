@@ -1,3 +1,32 @@
-header {
-  margin-right: 1rem;
-}  
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.container-fluid {
+    overflow-wrap: break-word;    
+    width: 100vw;
+    background-color: white;
+}
+
+div {
+    background-color: white;
+}
+
+img {
+    margin: 20%;
+}
+
+#banner {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 1rem;
+    height: 20%;
+    width: auto;
+}
+
+#right-col {
+    height: 100vh;
+}

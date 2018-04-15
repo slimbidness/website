@@ -16,9 +16,16 @@ div {
 }
 
 img {
-    margin: 2.5% 2.5% 2.5% 2.5% inherit;
+    margin: inherit;
     width: 45%;
     float: right;
+}
+
+#nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 1rem;
 }
 
 #banner {

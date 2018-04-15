@@ -17,6 +17,8 @@ div {
 
 p {
     font-family: "Times New Roman", Times, serif;
+    text-decoration-color: black;
+    text-decoration-line: none
 }
 
 img {
@@ -41,3 +43,4 @@ img {
     height: 20%;
     width: auto;
 }
+

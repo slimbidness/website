@@ -8,7 +8,7 @@ body {
     overflow-wrap: break-word;    
     width: 100vw;
     background-color: white;
-    float: left;
+    float: right;
     width: 100%; /* three containers (use 25% for four, and 50% for two, etc) */
     padding: 5px; /* if you want space between the images */
 }
@@ -20,6 +20,7 @@ div {
 img {
     margin: 5%;
     width: 40%;
+    float: right;
 }
 
 #banner {

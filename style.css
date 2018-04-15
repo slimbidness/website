@@ -16,7 +16,7 @@ div {
 }
 
 img {
-    margin: 2.5%;
+    margin: 2.5% inherit;
     width: 45%;
     float: right;
 }

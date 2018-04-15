@@ -15,6 +15,10 @@ div {
     background-color: white;
 }
 
+p {
+    font-family: "Times New Roman", Times, serif;
+}
+
 img {
     margin: 2.5%;
     width: 40%;

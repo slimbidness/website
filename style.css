@@ -21,6 +21,10 @@ p {
     text-decoration-line: none
 }
 
+a {
+        text-decoration: none;
+    }
+
 img {
     margin: 2.5%;
     width: 40%;
@@ -43,4 +47,3 @@ img {
     height: 20%;
     width: auto;
 }
-

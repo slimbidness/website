@@ -67,3 +67,10 @@ img {
     height: 20%;
     width: auto;
 }
+
+#about {
+    top: 0;
+    left: 0;
+    margin: 1rem 2rem 1rem 2em;
+    text-align: left;
+}

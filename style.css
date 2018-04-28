@@ -46,7 +46,6 @@ a:active {
 }
 
 img {
-    padding: 30px;
     margin: 2.5%;
     width: 40%;
     float: right;
@@ -75,3 +74,8 @@ img {
     margin: 1rem 2rem 2rem 2em;
     text-align: left;
 }
+
+#content {
+    padding: 20px;
+}
+

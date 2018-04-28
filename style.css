@@ -42,7 +42,8 @@ a:active {
 }
 
 #left-col {
-    margin: 1rem 2rem 1rem 2rem;
+    margin: 2rem 2rem 2rem 2rem;
+    float: centre;
 }
 
 img {
@@ -77,4 +78,6 @@ img {
 
 #content {
     padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }

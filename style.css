@@ -42,7 +42,7 @@ a:active {
 }
 
 #left-col {
-    margin: 1rem 2rem 1rem 0rem;
+    margin: 1rem 2rem 1rem 2rem;
 }
 
 img {
@@ -78,4 +78,3 @@ img {
 #content {
     padding: 20px;
 }
-
